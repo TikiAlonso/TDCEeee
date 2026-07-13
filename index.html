@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TDCE Flow</title>
-
+    <title>Sistema TDCE</title>
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 <body>
 
 <div class="contenedor">
 
     <header>
-
         <img src="assets/logo-banregio.png"
              alt="Banregio"
-             id="logo">
+             class="logo"
+             onerror="this.style.display='none'">
 
         <h1>Flujo de Contratación TDCE</h1>
-
-        <p>Sistema de Validación</p>
-
+        <p>Versión 0.1</p>
     </header>
 
     <main>
 
-        <div id="pantallaInicio">
+        <div id="inicio">
 
             <h2>Selecciona una facilidad</h2>
 
             <button id="btnFacilidad3">
-
                 Facilidad 3 - Inversiones Banregio
-
             </button>
 
         </div>
 
-        <div id="pantallaPregunta" style="display:none;">
+        <div id="flujo" style="display:none;">
 
-            <div id="barra">
+            <div class="barra">
 
                 <div id="progreso"></div>
 
@@ -57,17 +46,13 @@
 
             <div id="nota"></div>
 
-            <div class="botones">
+            <button id="btnSi">SI</button>
 
-                <button id="btnSi">SI</button>
-
-                <button id="btnNo">NO</button>
-
-            </div>
+            <button id="btnNo">NO</button>
 
         </div>
 
-        <div id="pantallaResultado" style="display:none;">
+        <div id="resultado" style="display:none;">
 
             <h2 id="tituloResultado"></h2>
 
@@ -88,5 +73,4 @@
 <script src="js/app.js"></script>
 
 </body>
-
 </html>
